@@ -7,7 +7,7 @@ body, html {
 .hero-image {
   /* This is your opening image. You will need to change feet.jpg to something of your choice*/
   
-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("feet.jpg");
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("glacier.jpg");
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -107,12 +107,26 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("
     max-width: 50%;
 }
 
+.rotateimgCW {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
 
-
-
+.rotateimgCCW {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
 
     
-
+img {
+    image-orientation: from-image;
+}
 
     
 
